@@ -1,12 +1,16 @@
-import './App.css'
+import React from "react";
+import CountdownTimer from "./components/CountdownTimer";
+import bgHills from "./assets/pattern-hills.svg";
+import fbIcon from "./assets/icon-facebook.svg";
+import pinterestIcon from "./assets/icon-pinterest.svg";
+import instagramIcon from "./assets/icon-instagram.svg";
 
-function App() {
-
+const App = () => {
   return (
     <>
-      <div className='flex justify-center min-h-screen items-center'>Hello World</div>
+      <CountdownTimer/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
