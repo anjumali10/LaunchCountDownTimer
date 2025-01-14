@@ -5,7 +5,24 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dsblue: 'hsl(236, 21%, 26%)',
+        vdblue: 'hsl(235, 16%, 14%)',
+        softred: 'hsl(345, 95%, 68%)',
+        gblue: 'hsl(237, 18%, 59%)',
+      },
+      fill:{
+        softred: 'hsl(345, 95%, 68%)',
+        gblue: 'hsl(237, 18%, 59%)',
+      },
+      fontFamily: {
+        redHat: ['"Red Hat Text"', 'sans-serif'],
+      },
+      letterSpacing: {
+        custom: '0.35em', // Adjust the value as needed
+      },
+    },
   },
   plugins: [],
 }
