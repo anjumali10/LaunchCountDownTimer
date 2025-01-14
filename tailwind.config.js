@@ -22,7 +22,25 @@ export default {
       letterSpacing: {
         custom: '0.35em', // Adjust the value as needed
       },
+      keyframes: {
+        flip: {
+          '0%': { transform: 'rotateX(0deg)' },
+          '50%': { transform: 'rotateX(-90deg)' },
+          '100%': { transform: 'rotateX(0deg)' },
+        },
+      },
+      animation: {
+        flip: 'flip 0.6s ease-in-out',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.perspective-1000': {
+          perspective: '1000px',
+        },
+      });
+    },
+  ],
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TimerCard from "./TimerCard";
 
 const CountdownTimer = () => {
     function calculateTimeLeft(params) {
@@ -27,8 +28,10 @@ const CountdownTimer = () => {
     
 
   return (
-    <div>
-        
+    <div className="flex gap-5">
+        {Object.entries(timeLeft).map(([unit, value]) => (
+        <TimerCard value = {value} label={unit} />
+      ))}
     </div>
   );
 };

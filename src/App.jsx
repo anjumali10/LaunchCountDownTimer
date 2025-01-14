@@ -17,7 +17,11 @@ const App = () => {
           <img className="bg-vdblue" src={bgStars} alt="bg-stars" />
         </div>
         <p className="text-white text-lg font-redHat font-bold uppercase absolute top-20 z-10 tracking-custom">We're Launching Soon</p>
-        
+        {/* countDownTimer */}
+        <div className="timer absolute">
+        <CountdownTimer/>
+        </div>
+        {/* Footer */}
         <div className="footer absolute bottom-0 flex justify-center">
           <img src={bgHills} alt="bgHills" />
           <div className="icons absolute bottom-10 flex gap-10">
